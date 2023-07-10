@@ -1,4 +1,4 @@
-
+import styles from './Lista.module.scss'
 
 export default function Lista() {
   const tarefas = [{
@@ -14,11 +14,11 @@ export default function Lista() {
     tempo: "03:00:00"
   }]
   return (
-    <aside>
+    <aside className={styles.listaTarefas}>
       <h3>Estudos do dia</h3>
       <ul>
         {tarefas.map((item, contador) => (
-          <li key={contador}>
+          <li key={contador} className={styles.item}>
             <h3>{item.tarefa}</h3>
             <span>{item.tempo}</span>
           </li>

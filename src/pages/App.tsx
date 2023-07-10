@@ -1,11 +1,11 @@
 import Formulario from "components/Formulario";
-import Botao from "./components/Botao";
 import Lista from "components/Lista";
+import styles from './App.module.scss'
 
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.AppStyle}>
       <Formulario />
       <Lista />
     </div>
