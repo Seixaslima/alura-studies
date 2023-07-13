@@ -1,19 +1,10 @@
+import { useState } from 'react'
 import Item from './Item'
 import styles from './Lista.module.scss'
+import { ITarefa } from 'interfaces/ITarefa'
 
-export default function Lista() {
-  const tarefas = [{
-    tarefa: "React",
-    tempo: "02:00:00"
-  },
-  {
-    tarefa: "javascript",
-    tempo: "01:00:00"
-  },
-  {
-    tarefa: "typescript",
-    tempo: "03:00:00"
-  }]
+export default function Lista({ tarefas }: { tarefas: ITarefa[] }) {
+
   return (
     <aside className={styles.listaTarefas}>
       <h3>Estudos do dia</h3>
