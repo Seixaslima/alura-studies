@@ -1,4 +1,4 @@
-import { Component, ReactNode } from 'react';
+import { ReactNode } from 'react';
 import styles from './Botao.module.scss'
 
 interface IBotao {
